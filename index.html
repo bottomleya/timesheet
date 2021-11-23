@@ -30,20 +30,23 @@ $(document).ready(function() {
     var t = $('#example').DataTable(
     {
         columns: [
-            { data: "Date",
-            render: function(data, type, row) {
-              if (type === "display") {
-                return '<input  type="date" placeholder="" name="Date">';
-              }
-              return data;
-            }},
-            { data: "Sign In",
-            render: function(data, type, row) {
-              if (type === "display") {
-                return '<input  type="time" placeholder="" name="Sign In">';
-              }
-              return data;
-            }
+            {   data: "Date",
+                title: "Date",
+                render: function(data, type, row) {
+                    if (type === "display") {
+                        return '<input  type="date" placeholder="" name="Date">';
+                    }
+                    return data;
+                }
+            },
+            {   data: "Sign In",
+                title: "Sign In",
+                render: function(data, type, row) {
+                    if (type === "display") {
+                        return '<input  type="time" placeholder="" name="Sign In">';
+                    }
+                    return data;
+                }
             },
             { title: "Sign Out" },
             { title: "Job Number" },
@@ -64,6 +67,13 @@ $(document).ready(function() {
         ] ).draw( false );
      } );
  
+    var obj ={"data":[{
+        "DT_RowId":"1",
+        "pos":"2",
+        "price":"10.00"}]};
+    t.rows.add(obj.data).draw();
+  });
+    
     // Automatically add a first row of data
     $('#addRow').click();
 } );
