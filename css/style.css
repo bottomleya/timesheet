@@ -7,5 +7,5 @@ td {
     text-align: center;
     margin: auto;
     vertical-align: middle;
-    display: inline;
+    display: inline-block;
 }
