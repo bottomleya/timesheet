@@ -11,6 +11,7 @@
 
         <script src="js/jquery-3.5.1.js"></script>
         <script src="js/jquery.dataTables.min.js"></script>
+        <script src="js/moment.js"></script>
 
         <title>timesheet | JQuery DataTable Test</title>
         
@@ -26,7 +27,17 @@ var dataSet = [
 ];
           
 $(document).ready(function() {
-    var t = $('#example').DataTable();
+    var t = $('#example').DataTable(
+    {
+        columns: [
+            { title: "Date" },
+            { title: "Sign In" },
+            { title: "Sign Out" },
+            { title: "Job Number" },
+            { title: "Job Description" },
+            { title: "Docs." }
+        ]
+    } );
     var counter = 1;
  
     $('#addRow').on( 'click', function () {
