@@ -11,7 +11,6 @@
 
         <script src="js/jquery-3.5.1.js"></script>
         <script src="js/jquery.dataTables.min.js"></script>
-        <script src="js/moment.js"></script>
 
         <title>timesheet | JQuery DataTable Test</title>
         
@@ -40,8 +39,8 @@ $(document).ready(function() {
     } );
     $('#addRow').on( 'click', function () {
         t.row.add( [
-            moment().format('D/MM/YYYY'),
-            moment().format('h:mm A'),
+            "23/11/2021",
+            "9:05 PM",
             "",
             "1234567",
             ""
