@@ -79,7 +79,7 @@ $(document).ready(function() {
                 title: "Documents",
                 render: function(data, type, row) {
                     if (type === "display") {
-                        return '<input  type="text" placeholder="" name="Documents">';
+                        return '<i class="fa fa-file-o"></i>';
                     }
                     return data;
                 }
@@ -88,7 +88,7 @@ $(document).ready(function() {
                 title: "Edit",
                 render: function(data, type, row) {
                     if (type === "display") {
-                        return '<input  type="text" placeholder="" name="Edit">';
+                        return '<i class="fa fa-edit"></i>';
                     }
                     return data;
                 }
