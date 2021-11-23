@@ -31,7 +31,14 @@ $(document).ready(function() {
     {
         columns: [
             { title: "Date" },
-            { title: "Sign In" },
+            { data: "Sign In",
+            render: function(data, type, row) {
+              if (type === "display") {
+                return '<input  type="date" placeholder="" name="Sign In">';
+              }
+              return data;
+            }
+            },
             { title: "Sign Out" },
             { title: "Job Number" },
             { title: "Job Description" },
