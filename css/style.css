@@ -1,4 +1,10 @@
 body {
     text-align: center,
-    margin: auto
+    margin: auto;
+}
+
+td {
+    text-align: center,
+    margin: auto;
+    vertical-align: middle;
 }
