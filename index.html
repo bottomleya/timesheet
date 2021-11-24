@@ -32,6 +32,7 @@ $(document).ready(function() {
         columns: [
             {   data: "Date",
                 title: "Date",
+                width: "700px",
                 render: function(data, type, row) {
                     if (type === "display") {
                         return '<input  type="date" placeholder="" name="Date">';
@@ -41,6 +42,7 @@ $(document).ready(function() {
             },
             {   data: "Sign In",
                 title: "Sign In",
+                width: "700px",
                 render: function(data, type, row) {
                     if (type === "display") {
                         return '<input  type="time" placeholder="" name="Sign In">';
@@ -50,6 +52,7 @@ $(document).ready(function() {
             },
             {   data: "Sign Out",
                 title: "Sign Out",
+                width: "700px",
                 render: function(data, type, row) {
                     if (type === "display") {
                         return '<input  type="time" placeholder="" name="Sign Out">';
@@ -59,6 +62,7 @@ $(document).ready(function() {
             },
             {   data: "Job Number",
                 title: "Job Number",
+                width: "700px",
                 render: function(data, type, row) {
                     if (type === "display") {
                         return '<input  type="text" placeholder="" name="Job Number">';
@@ -68,6 +72,7 @@ $(document).ready(function() {
             },
             {   data: "Job Description",
                 title: "Job Description",
+                width: "2500px",
                 render: function(data, type, row) {
                     if (type === "display") {
                         return '<input  type="text" placeholder="" name="Job Description">';
@@ -77,6 +82,7 @@ $(document).ready(function() {
             },
             {   data: "Documents",
                 title: "Documents",
+                width: "50px",
                 render: function(data, type, row) {
                     if (type === "display") {
                         return '<i class="fa fa-file-o"></i>';
@@ -86,6 +92,7 @@ $(document).ready(function() {
             },
             {   data: "Edit",
                 title: "Edit",
+                width: "50px",
                 render: function(data, type, row) {
                     if (type === "display") {
                         return '<i class="fa fa-edit"></i>';
