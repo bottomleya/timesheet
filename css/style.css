@@ -7,6 +7,6 @@ td {
     vertical-align: middle;
     width: 100%;
 }
-input {
+.autoWidthInput {
     width: 100%;
 }
