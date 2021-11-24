@@ -35,7 +35,7 @@ $(document).ready(function() {
                 width: "100px",
                 render: function(data, type, row) {
                     if (type === "display") {
-                        return '<input  type="date" placeholder="" name="Date">';
+                        return '<input  type="date" placeholder="" name="Date" value="01/01/2021">';
                     }
                     return data;
                 }
@@ -45,7 +45,7 @@ $(document).ready(function() {
                 width: "100px",
                 render: function(data, type, row) {
                     if (type === "display") {
-                        return '<input  type="time" placeholder="" name="Sign In">';
+                        return '<input  type="time" placeholder="" name="Sign In" value="08:00 AM">';
                     }
                     return data;
                 }
@@ -55,7 +55,7 @@ $(document).ready(function() {
                 width: "100px",
                 render: function(data, type, row) {
                     if (type === "display") {
-                        return '<input  type="time" placeholder="" name="Sign Out">';
+                        return '<input  type="time" placeholder="" name="Sign Out" value="03:36 PM">';
                     }
                     return data;
                 }
@@ -65,7 +65,7 @@ $(document).ready(function() {
                 width: "150px",
                 render: function(data, type, row) {
                     if (type === "display") {
-                        return '<input  type="text" placeholder="" name="Job Number">';
+                        return '<input  type="text" placeholder="" name="Job Number" value="1234567">';
                     }
                     return data;
                 }
@@ -75,7 +75,7 @@ $(document).ready(function() {
                 width: "auto",
                 render: function(data, type, row) {
                     if (type === "display") {
-                        return '<input  type="text" class="autoWidthInput" placeholder="" name="Job Description">';
+                        return '<input  type="text" class="autoWidthInput" placeholder="" name="Job Description" value="">';
                     }
                     return data;
                 }
