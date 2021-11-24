@@ -39,7 +39,7 @@ $(document).ready(function() {
                 width: "100px",
                 render: function(data, type, row) {
                     if (type === "display") {
-                        return '<input  type="date" placeholder="" name="Date" value=yyyy+"-"+mm+"-"+dd>';
+                        return '<input  type="date" placeholder="" name="Date" value="'+yyyy+'-'+mm+'-'+dd+'">';
                     }
                     return data;
                 }
