@@ -21,9 +21,10 @@ label {
 }
 
 input {
-    background-color: #555555;
+    background-color: #c9c9c9;
+    color: #000000;
 }
 
-.sorting_1 {
-    background-color: #787878;
+table.dataTable.display tbody tr.odd>.sorting_1 {
+    background-color: #949494;
 }
