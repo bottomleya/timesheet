@@ -21,8 +21,14 @@ label {
 }
 
 input {
-    background-color: #c9c9c9;
-    color: #000000;
+    background-color: #e8e8e8;
+    color: #666666;
+    width: 100%;
+}
+
+select {
+    background-color: #e8e8e8;
+    color: #666666;
 }
 
 table.dataTable.display tbody tr.odd>.sorting_1 {
